@@ -54,7 +54,7 @@ var dishDatabase = [
     { id: "13", name: "Fried Rice 🍚" },
     { id: "14", name: "Grilled Cheese 🧀" },
 ];
-var bot = new grammy_1.Bot(process.env.BOT_TOKEN);
+var bot = new grammy_1.Bot(process.env.BOT_TOKEN || "");
 bot.use((0, grammy_1.session)({
     initial: function () {
         return { favoriteIds: [] };
